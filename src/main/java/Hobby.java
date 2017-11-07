@@ -19,6 +19,10 @@ class Hobby{
                 "My hobby is " + this.name + "and it costs " + this.value);
     }
 
+    public String getName() {
+        return this.name;
+    }
+
     void validate() throws HobbyException {
         if (Objects.equals(this.name, "")) {
             throw new HobbyException("ERROR: Set name for hobby " + getClass().getName());
